@@ -1,0 +1,233 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9fbe7;
+    color: #4f4f4f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 1rem;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffcc80;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://i.ibb.co/vJp5YcJ/food-8775697-1920.jpg') no-repeat center center / cover;
+    text-align: center;
+    padding: 6rem 1rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(46, 125, 50, 0.7);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.cta-btn {
+    background: #ff9800;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #ffa726;
+}
+
+/* Product Section */
+.products {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.products h2 {
+    color: #558b2f;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buy-btn {
+    background: #4caf50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: #66bb6a;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #f1f8e9;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #558b2f;
+}
+
+.testimonial-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem auto;
+    max-width: 600px;
+    padding: 1rem;
+}
+
+/* Social Media Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #2e7d32;
+    margin-top: 2rem;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-btn.facebook {
+    background-color: #4267B2;
+}
+
+.social-btn.instagram {
+    background-color: #E1306C;
+}
+
+.social-btn.whatsapp {
+    background-color: #25D366;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Footer */
+.footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h2, h3, h4 {
+    margin-bottom: 20px;
+    color: #558b2f;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4caf50;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffeb3b;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 1rem;
+    background-color: #ffffff;
+    text-align: center;
+    color: #4f4f4f;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.testimonial-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-info h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.testimonial-info p {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        text-align: left;
+    }
+}
