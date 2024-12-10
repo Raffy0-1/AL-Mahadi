@@ -35,6 +35,21 @@ h2, h3, h4 {
     font-weight: bold;
 }
 
+/* Hamburger button styles */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle .bar {
+    width: 25px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #fff;
+}
+
+/* Navbar links */
 .navbar-links {
     list-style: none;
     padding: 0;
@@ -55,6 +70,15 @@ h2, h3, h4 {
 
 .navbar-links a:hover {
     color: #ffeb3b;
+}
+
+/* Active links for mobile */
+.navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 100%;
 }
 
 /* Testimonials Section */
@@ -120,8 +144,19 @@ h2, h3, h4 {
     }
 
     .navbar-links {
+        display: none;
         flex-direction: column;
         gap: 1rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 
     .testimonial {
