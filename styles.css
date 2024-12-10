@@ -222,12 +222,74 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .navbar .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-btn {
+        padding: 0.7rem 1.2rem;
+    }
+
     .product-list {
         flex-direction: column;
         align-items: center;
     }
 
     .product-card {
-        width: 90%;
+        width: 80%;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .social-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Specific */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
+    .cta-btn {
+        padding: 0.6rem 1rem;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .social-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
     }
 }
